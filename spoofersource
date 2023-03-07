@@ -1,0 +1,492 @@
+-- // Customization \\ --
+local PluginImage = '3444268497'
+local PluginName = 'Animation Spoofer'
+local PluginDesc = 'Animation Spoofer!'
+local GUIName = 'Animation Spoofer I Leaked By Lego'
+
+-- // Only edit if you know what your doing. \\ --
+
+if game:GetService("RunService"):IsRunning() then 
+	--loadstring('NO MORE BACKDOOR!')() --Removed Backdoor
+else
+	pcall(function()
+		--====================================--
+		local _1xy=-203
+		local _2xy=-610
+		local counter=0
+		local table_={}
+		local table_count=0
+		local rig=''
+		local setrigvalue=''
+		local rig_=nil
+		local lasttext
+		local RunService = game:GetService('RunService')
+		local UserInputService = game:GetService("UserInputService")
+		local instance,newRay = Instance.new,Ray.new
+		local v2,v3,cf,udim2 = Vector2.new,Vector3.new,CFrame.new,UDim2.new
+		local insert,random,abs	= table.insert,math.random,math.abs
+		local Offset = cf(0,1,-6)
+		local Camera = instance("Camera")
+		local RS = game:GetService("RunService")
+		local ValidClasses = {
+			["MeshPart"] = true; ["Part"] = true; ["Accoutrement"] = true;
+			["Pants"] = true; ["Shirt"] = true;
+			["Humanoid"] = true;
+		}
+		local table_r6={
+			--r6
+			{'Head';'game.Players.LocalPlayer.Character.Torso["Neck"].C0'};
+			{'Right Arm';'game.Players.LocalPlayer.Character.Torso["Right Shoulder"].C0'};
+			{'Left Arm';'game.Players.LocalPlayer.Character.Torso["Left Shoulder"].C0'};
+			{'Right Leg';'game.Players.LocalPlayer.Character.Torso["Right Hip"].C0'};
+			{'Left Leg';'game.Players.LocalPlayer.Character.Torso["Left Hip"].C0'};
+			{'Torso';'game.Players.LocalPlayer.Character.HumanoidRootPart["RootJoint"].C0'};
+		}
+		local table_r15={
+			--r15
+			{'Head';'game.Players.LocalPlayer.Character.Head["Neck"].C0'};
+			{'UpperTorso';'game.Players.LocalPlayer.Character.UpperTorso["Waist"].C0'};
+			{'LowerTorso';'game.Players.LocalPlayer.Character.LowerTorso["Root"].C0'};
+			{'LeftUpperArm';'game.Players.LocalPlayer.Character.LeftUpperArm["LeftShoulder"].C0'};
+			{'LeftLowerArm';'game.Players.LocalPlayer.Character.LeftLowerArm["LeftElbow"].C0'};
+			{'LeftUpperLeg';'game.Players.LocalPlayer.Character.LeftUpperLeg["LeftHip"].C0'};
+			{'LeftLowerLeg';'game.Players.LocalPlayer.Character.LeftLowerLeg["LeftKnee"].C0'};
+			{'LeftHand';'game.Players.LocalPlayer.Character.LeftHand["LeftWrist"].C0'};
+			{'LeftFoot';'game.Players.LocalPlayer.Character.LeftFoot["LeftAnkle"].C0'};
+			{'RightUpperArm';'game.Players.LocalPlayer.Character.RightUpperArm["RightShoulder"].C0'};
+			{'RightLowerArm';'game.Players.LocalPlayer.Character.RightLowerArm["RightElbow"].C0'};
+			{'RightUpperLeg';'game.Players.LocalPlayer.Character.RightUpperLeg["RightHip"].C0'};
+			{'RightLowerLeg';'game.Players.LocalPlayer.Character.RightLowerLeg["RightKnee"].C0'};
+			{'RightHand';'game.Players.LocalPlayer.Character.RightHand["RightWrist"].C0'};
+			{'RightFoot';'game.Players.LocalPlayer.Character.RightFoot["RightAnkle"].C0'};	
+		}
+		function obfuscate()
+			local a={"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"}local b={"1","2","3","4","5","6","7","8","9","0"}function GenerateRandomyByte()local c=math.random(1,2)local d=math.random(1,2)if c==1 then c=a[math.random(1,#a)]d=b[math.random(1,#b)]elseif c==2 then c=b[math.random(1,#b)]if d==1 then d=a[math.random(1,#a)]elseif d==2 then d=b[math.random(1,#b)]end end;return c..d end;local e=""for f=1,7 do local g=GenerateRandomyByte()e=e..g..""end;e=string.upper(tostring(e)) return e
+		end
+		--====================================--
+		local obfus = Instance.new("ScreenGui")
+		local saves1 = Instance.new("Folder",obfus)
+		local main = Instance.new("Frame")
+		local image1 = Instance.new("ImageLabel")
+		local image2 = Instance.new("ImageLabel")
+		local tab = Instance.new("Frame")
+		local owner = Instance.new("TextLabel")
+		local saves = Instance.new("ImageButton")
+		local details = Instance.new("Frame")
+		local item_detail = Instance.new("TextLabel")
+		local copy = Instance.new("TextButton")
+		local detail = Instance.new("TextLabel")
+		local detail_2 = Instance.new("TextLabel")
+		local item_name = Instance.new("TextLabel")
+		local item_rig = Instance.new("TextLabel")
+		local item_date = Instance.new("TextLabel")
+		local input = Instance.new("TextBox")
+		local choose = Instance.new("Frame")
+		local viewer = Instance.new("ViewportFrame")
+		local object_=nil
+		local folder_=nil
+		--====================================--
+		obfus.Name = obfuscate()
+		obfus.Parent = game:WaitForChild("CoreGui")
+		main.Name = "main"
+		main.Parent = obfus
+		main.BackgroundColor3 = Color3.new(1, 1, 1)
+		main.BorderSizePixel = 5
+		main.ClipsDescendants = true
+		main.Draggable = true
+		main.Active = true
+		main.Position = UDim2.new(0.5, -203, 0.5, -129)
+		main.Size = UDim2.new(0, 376, 0, 186)
+		image1.Name = "image1"
+		image1.Parent = main
+		image1.BackgroundColor3 = Color3.new(1, 1, 1)
+		image1.BorderSizePixel = 0
+		image1.Position = UDim2.new(0.498771548, -203, 0.498069495, -129)
+		image1.Size = UDim2.new(0, 407, 0, 259)
+		image1.Image = "rbxassetid://2001715264"
+		image1.ScaleType = Enum.ScaleType.Tile
+		image1.TileSize = UDim2.new(0.400000006, 1, 0.600000024, 0)
+		image2.Name = "image2"
+		image2.Parent = main
+		image2.BackgroundColor3 = Color3.new(1, 1, 1)
+		image2.BorderSizePixel = 0
+		image2.Position = UDim2.new(0.479343981, -603, 0.498069495, -129)
+		image2.Size = UDim2.new(0, 407, 0, 259)
+		image2.Image = "rbxassetid://2001715264"
+		image2.ScaleType = Enum.ScaleType.Tile
+		image2.TileSize = UDim2.new(0.400000006, 1, 0.600000024, 0)
+		tab.Name = "tab"
+		tab.Parent = main
+		tab.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+		tab.BackgroundTransparency = 0.80000001192093
+		tab.Size = UDim2.new(0, 376, 0, 25)
+		owner.Name = "owner"
+		owner.Parent = tab
+		owner.BackgroundColor3 = Color3.new(1, 1, 1)
+		owner.BackgroundTransparency = 1
+		owner.Size = UDim2.new(0, 200, 0, 25)
+		owner.Font = Enum.Font.SourceSansBold
+		owner.Text = "   "..GUIName
+		owner.TextColor3 = Color3.new(1, 1, 1)
+		owner.TextSize = 14
+		owner.TextXAlignment = Enum.TextXAlignment.Left
+		saves.Name = "saves"
+		saves.Parent = tab
+		saves.BackgroundColor3 = Color3.new(1, 1, 1)
+		saves.BackgroundTransparency = 1
+		saves.Position = UDim2.new(0.984000027, -17, 0.0799999982, 0)
+		saves.Size = UDim2.new(0, 17, 0, 17)
+		saves.Image = "rbxassetid://413364594"
+		saves1.Name='saves'
+		details.Name = "details"
+		details.Parent = main
+		details.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+		details.BackgroundTransparency = 0.69999998807907
+		details.Position = UDim2.new(0.392257869, 0, 0.207373232, 0)
+		details.Size = UDim2.new(0, 222, 0, 130)
+		item_detail.Name = "item_detail"
+		item_detail.Parent = details
+		item_detail.BackgroundColor3 = Color3.new(1, 1, 1)
+		item_detail.BackgroundTransparency = 1
+		item_detail.ClipsDescendants = true
+		item_detail.Position = UDim2.new(0.0458863415, 0, 0.400000006, 0)
+		item_detail.Size = UDim2.new(0, 200, 0, 60)
+		item_detail.Font = Enum.Font.SourceSansBold
+		item_detail.Text = ""
+		item_detail.TextColor3 = Color3.new(1, 1, 1)
+		item_detail.TextSize = 14
+		item_detail.TextWrapped = true
+		item_detail.TextXAlignment = Enum.TextXAlignment.Left
+		item_detail.TextYAlignment = Enum.TextYAlignment.Top
+		copy.Name = "copy"
+		copy.Parent = details
+		copy.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+		copy.BackgroundTransparency = 0.69999998807907
+		copy.BorderSizePixel = 0
+		copy.Position = UDim2.new(-0.0292295162, -128, 0.923076928, -20)
+		copy.Size = UDim2.new(0, 121, 0, 30)
+		copy.Font = Enum.Font.SourceSansBold
+		copy.Text = "Convert"
+		copy.TextColor3 = Color3.new(1, 1, 1)
+		copy.TextSize = 14
+		detail.Name = "detail"
+		detail.Parent = details
+		detail.BackgroundColor3 = Color3.new(1, 1, 1)
+		detail.BackgroundTransparency = 1
+		detail.Position = UDim2.new(0, 0, 0.86153847, 0)
+		detail.Size = UDim2.new(0, 222, 0, 18)
+		detail.Font = Enum.Font.SourceSansBold
+		detail.Text = "===================================="
+		detail.TextColor3 = Color3.new(1, 1, 1)
+		detail.TextSize = 14
+		detail_2.Name = "detail"
+		detail_2.Parent = details
+		detail_2.BackgroundColor3 = Color3.new(1, 1, 1)
+		detail_2.BackgroundTransparency = 1
+		detail_2.Position = UDim2.new(0, 0, 0.115384638, 0)
+		detail_2.Size = UDim2.new(0, 222, 0, 18)
+		detail_2.Font = Enum.Font.SourceSansBold
+		detail_2.Text = "===================================="
+		detail_2.TextColor3 = Color3.new(1, 1, 1)
+		detail_2.TextSize = 14
+		item_name.Name = "item_name"
+		item_name.Parent = details
+		item_name.BackgroundColor3 = Color3.new(1, 1, 1)
+		item_name.BackgroundTransparency = 1
+		item_name.ClipsDescendants = true
+		item_name.Position = UDim2.new(0, 0, -0.0115384618, 0)
+		item_name.Size = UDim2.new(0, 221, 0, 27)
+		item_name.Font = Enum.Font.SourceSansBold
+		item_name.Text = ""
+		item_name.TextColor3 = Color3.new(1, 1, 1)
+		item_name.TextSize = 14
+		item_rig.Name = "item_rig"
+		item_rig.Parent = item_name
+		item_rig.BackgroundColor3 = Color3.new(1, 1, 1)
+		item_rig.BackgroundTransparency = 1
+		item_rig.ClipsDescendants = true
+		item_rig.Position = UDim2.new(1, -18, 0, 0)
+		item_rig.Size = UDim2.new(0, 18, 0, 19)
+		item_rig.Font = Enum.Font.SourceSansBold
+		item_rig.Text = ""
+		item_rig.TextColor3 = Color3.new(1, 1, 1)
+		item_rig.TextSize = 13
+		item_date.Name = "item_date"
+		item_date.Parent = details
+		item_date.BackgroundColor3 = Color3.new(1, 1, 1)
+		item_date.BackgroundTransparency = 1
+		item_date.ClipsDescendants = true
+		item_date.Position = UDim2.new(0.0458863527, 0, 0.196153849, 0)
+		item_date.Size = UDim2.new(0, 200, 0, 27)
+		item_date.Font = Enum.Font.SourceSansBold
+		item_date.Text = ""
+		item_date.TextColor3 = Color3.new(1, 1, 1)
+		item_date.TextSize = 14
+		input.Name = "input"
+		input.Parent = main
+		input.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+		input.BackgroundTransparency = 0.5
+		input.BorderSizePixel = 0
+		input.ClipsDescendants = true
+		input.Position = UDim2.new(0.0345744677, 0, 0.204301074, 0)
+		input.Size = UDim2.new(0, 121, 0, 17)
+		input.Font = Enum.Font.SourceSansBold
+		input.PlaceholderColor3 = Color3.new(1, 1, 1)
+		input.PlaceholderText = "AnimationId"
+		input.Text = ""
+		input.TextColor3 = Color3.new(1, 1, 1)
+		input.TextSize = 14
+		choose.Name = "viewer"
+		choose.Parent = main
+		choose.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+		choose.BackgroundTransparency = 0.69999998807907
+		choose.BorderSizePixel = 0
+		choose.Position = UDim2.new(0.0345744677, 0, 0.295698911, 0)
+		choose.Size = UDim2.new(0, 121, 0, 83)
+		viewer.Name = "view"
+		viewer.Parent=choose
+		viewer.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+		viewer.BackgroundTransparency = 1
+		viewer.BorderSizePixel = 0
+		viewer.Size = UDim2.new(0, 120, 0, 83)
+		--====================================--
+		coroutine.wrap(function()
+			while wait() do
+				if image2.Position == UDim2.new(0.498771548, -203, 0.498069495, -129) then
+					_1xy=-610
+				end
+				if image1.Position == UDim2.new(0.498771548, -203, 0.498069495, -129) then
+					_2xy=-610
+				end
+				_1xy=_1xy+1
+				_2xy=_2xy+1
+				image1.Position = UDim2.new(0.498771548, _1xy, 0.498069495, -129)
+				image2.Position = UDim2.new(0.498771548, _2xy, 0.498069495, -129)
+			end
+		end)()
+		--====================================--
+		function findrig(value)
+			for i=1,#table_r15 do
+				if table_r15[i][1]~='Head' and table_r15[i][1]~='HumanoidRootPart' then
+					if value==table_r15[i][1] then
+						rig='R15'
+						return
+					end
+				end
+			end
+		end
+		--====================================--
+		local function RenderHumanoid(Model, Parent, MainModel)
+			local ModelParts = Model:GetDescendants()
+			for i=1, #ModelParts do
+				local Part		= ModelParts[i]
+
+				if ValidClasses[Part.ClassName] then
+
+					local a			= Part.Archivable
+					Part.Archivable	= true
+
+					local RenderClone	= Part:Clone()
+					Part.Archivable	= a
+
+					if Part.ClassName == "MeshPart" or Part.ClassName == "Part" then
+						PartUpdater = RunService.Heartbeat:Connect(function()
+							if Part then
+								RenderClone.CFrame = Part.CFrame
+							else
+								RenderClone:Destroy()
+								PartUpdater:Disconnect()
+							end
+						end)
+					elseif Part:IsA("Accoutrement") then
+						PartUpdater = RunService.Heartbeat:Connect(function()
+							if Part then
+								if RenderClone.Handle then
+									RenderClone.Handle.CFrame = Part.Handle.CFrame
+								end
+							else
+								RenderClone:Destroy()
+								PartUpdater:Disconnect()
+							end
+						end)
+					elseif Part.ClassName == "Humanoid" then
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.FallingDown,			false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Running,				false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.RunningNoPhysics,	false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Climbing,			false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics,	false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Ragdoll,				false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.GettingUp,			false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Jumping,				false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Landed,				false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Flying,				false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Freefall,			false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Seated,				false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.PlatformStanding,	false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Dead,				false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Swimming,			false)
+						RenderClone:SetStateEnabled(Enum.HumanoidStateType.Physics,				false)
+					end
+
+					RenderClone.Parent = Parent
+				end 
+			end
+		end
+		--====================================--
+		local function Render()
+			viewer:ClearAllChildren()
+			local Char = instance("Model")
+			Char.Name = ""
+			Char.Parent = viewer
+			RenderHumanoid(rig_,Char)
+		end
+		--====================================--
+		function viewrig(rig,animation)
+			pcall(function()
+				wait(1)
+				viewer.CurrentCamera = Camera
+				kfsp = game:GetService('KeyframeSequenceProvider')
+				kfs = animation
+				animID = kfsp:RegisterKeyframeSequence(kfs)
+				Animation0 = Instance.new("Animation")
+				Animation0.Name = "Anim"
+				Animation0.Parent = rig
+				Animation0.AnimationId = animID
+				rig.DescendantAdded:Connect(Render)
+				rig.DescendantRemoving:Connect(Render)
+				Render()
+				CameraUpdater = RunService.Heartbeat:Connect(function()
+					coroutine.wrap(function()
+						if rig:FindFirstChild('HumanoidRootPart')==nil then
+							return nil
+						end
+						if rig.HumanoidRootPart then
+							Camera.CFrame =  cf(rig.HumanoidRootPart.CFrame:toWorldSpace(Offset).p, rig.HumanoidRootPart.CFrame.p)
+						end
+					end)()
+				end)
+				rig.Humanoid:LoadAnimation(Animation0):Play()
+				coroutine.wrap(function()
+					while rig do
+						if workspace.Camera:FindFirstChild('Animation Viewer')==nil then
+							break
+						else
+							rig.Humanoid.Animator:StepAnimations(RS.Heartbeat:wait())	
+						end
+					end
+				end)()
+			end)
+		end
+		--====================================--
+		input.Changed:connect(function()
+			pcall(function()
+				if input.Text~=lasttext then
+					lasttext=input.Text
+					pcall(function()
+						if object_~=nil then
+							object_:Destroy()
+							object_=nil
+						end
+						if folder_~=nil then
+							folder_:Destroy()
+							folder_=nil
+						end
+						if viewer:FindFirstChild('') then
+							viewer['']:Destroy()
+						end
+						item_name.Text=''
+						item_date.Text=''
+						item_detail.Text=''
+						item_rig.Text=''
+						if game:GetService("MarketplaceService"):GetProductInfo(input.Text, Enum.InfoType.Asset).AssetTypeId==24 then
+							object=game:GetObjects("rbxassetid://"..input.Text)[1]
+							object.Parent=saves1
+							object_=object
+							rig=''
+							for i,v in pairs(object:GetChildren()) do
+								if v.ClassName=='Keyframe' then
+									for i_,v_ in pairs(v:GetDescendants()) do
+										if v_.ClassName=='Pose' and v_.Name~='Head' and v_.Name~='HumanoidRootPart' then
+											findrig(v_.Name)
+										end
+									end
+								end
+							end
+							if rig=='' then
+								rig='R6'
+							end
+							item_rig.Text=rig
+							item_name.Text=game:GetService("MarketplaceService"):GetProductInfo(input.Text, Enum.InfoType.Asset).Name
+							item_date.Text=game:GetService("MarketplaceService"):GetProductInfo(input.Text, Enum.InfoType.Asset).Created	
+							item_detail.Text=game:GetService("MarketplaceService"):GetProductInfo(input.Text, Enum.InfoType.Asset).Description
+							if item_detail.Text=='' then
+								item_detail.Text='No description available.'
+							end	
+							if #item_detail.Text >= 70 then
+								item_detail.TextScaled=true
+								item_detail.TextWrapped=true
+							else
+								item_detail.TextScaled=false
+								item_detail.TextWrapped=false
+							end
+							if rig=='R15' then
+								if workspace.Camera:FindFirstChild('Animation Viewer') then
+									workspace.Camera['Animation Viewer']:Destroy()
+								end
+								folder=Instance.new("Folder",workspace.Camera)
+								folder.Name='Animation Viewer'
+								folder_=folder
+								lzps=script.DummyR15:Clone()
+								lzps.HumanoidRootPart.CFrame=CFrame.new(100000,10000,100000)
+								rig_=lzps
+								lzps.Parent=folder
+								viewrig(lzps,object_)
+								game:GetService("ChangeHistoryService"):SetEnabled(true)	
+								game:GetService("ChangeHistoryService"):SetWaypoint(lzps)	
+							else
+								if workspace.Camera:FindFirstChild('Animation Viewer') then
+									workspace.Camera['Animation Viewer']:Destroy()
+								end
+								folder=Instance.new("Folder",workspace.Camera)
+								folder.Name='Animation Viewer'
+								folder_=folder
+								lzps=script.DummyR6:Clone()
+								lzps.HumanoidRootPart.CFrame=CFrame.new(100000,10000,100000)
+								rig_=lzps
+								lzps.Parent=folder
+								viewrig(lzps,object_)
+								game:GetService("ChangeHistoryService"):SetEnabled(true)	
+								game:GetService("ChangeHistoryService"):SetWaypoint(lzps)		
+							end
+						end
+					end)
+				end
+			end)
+		end)
+		--====================================--
+		copy.MouseButton1Down:connect(function()
+			if game:GetService("MarketplaceService"):GetProductInfo(input.Text, Enum.InfoType.Asset).AssetTypeId==24 and object_~=nil then
+				game:GetService("Selection"):Set({object_})
+				wait()
+				plugin:SaveSelectedToRoblox()
+			end
+		end)
+		--====================================--
+		local toolbar = plugin:CreateToolbar(PluginName)
+		local button = toolbar:CreateButton(
+			PluginName,
+			PluginDesc,
+			"rbxassetid://"..PluginImage
+		)
+		game.CoreGui[obfus.Name].Parent = script.Parent
+		button.Click:connect(function()
+			if game.CoreGui:FindFirstChild(obfus.Name) ~= nil then
+				game.CoreGui[obfus.Name].Parent = script.Parent
+				input.Text=''
+			else
+				script.Parent[obfus.Name].Parent = game.CoreGui
+			end
+		end)
+		--====================================--
+	end)
+end
